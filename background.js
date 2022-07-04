@@ -1,11 +1,11 @@
 async function getCurrentTab() {
-  let queryOptions = {active: true, lastFocusedWindow: true};
-  let [tab] = await chrome.tabs.query(queryOptions);
+  const queryOptions = {active: true, lastFocusedWindow: true};
+  const [tab] = await chrome.tabs.query(queryOptions);
   return tab;
 }
 
 function writeToClipboard(text) {
-  let input = document.createElement('textarea');
+  const input = document.createElement('textarea');
   document.body.appendChild(input);
   input.value = text;
   input.focus();
@@ -25,7 +25,6 @@ const getTicketIdFromUrl = (url) => {
 
     return urlDetails.pathname.split('/').reverse()[0]
   }
-
 }
 
 const copy = (value, tab) => {
@@ -35,6 +34,7 @@ const copy = (value, tab) => {
     args: [value],
   });
 }
+
 const getTitle = () => {
   return document.querySelector("[data-test-id='issue.views.issue-base.foundation.summary.heading']").innerText
 }
