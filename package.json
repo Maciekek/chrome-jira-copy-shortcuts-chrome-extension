@@ -1,0 +1,12 @@
+{
+  "name": "chrome-jira-copy-shortcuts",
+  "version": "1.0.0",
+  "description": "Tool to quick copy jira ticketId, title or prepared markDown link ",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+
+}

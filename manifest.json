@@ -1,0 +1,34 @@
+{
+  "name": "Quick copy jira ticket id or title.",
+  "description": "Copy jira ticket's id, ticket's name or even prepared link to opened ticket in markdown format.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting", "tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "assets/16x16.png",
+    "32": "assets/32x32.png",
+    "48": "assets/48x48.png",
+    "128": "assets/128x128.png"
+  },
+  "commands": {
+
+    "copyTicketId": {
+      "suggested_key": "Ctrl+Shift+1",
+      "description": "Say Hello"
+    },
+    "copyTicketTitle": {
+      "suggested_key": "Ctrl+Shift+2",
+      "description": "Say Hello"
+    },
+    "copyMarkdownTicketLinkWithId": {
+      "suggested_key": "Ctrl+Shift+0",
+      "description": "Say Hello"
+    }
+  }
+}
